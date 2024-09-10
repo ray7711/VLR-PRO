@@ -1,0 +1,170 @@
+body {
+    background-image: url(pppp.jpg) ;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(2px);
+    font-family: "Roboto";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+h1{
+    font-size: 2rem;
+    color: aliceblue;
+    text-align: center;
+    letter-spacing: 0rem;
+}
+
+button {
+    background-color: #fff;
+    border: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+
+
+.input-wrapper {
+    width: 15rem;
+    padding:10px 12px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #ffffff;
+    border-radius: 16px;
+}
+
+
+
+.input-wrapper i {
+    color: #000000;
+    cursor: pointer;
+}
+
+
+
+.input-wrapper input {
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    font-size: 15px;
+    font-family: "Open Sans";
+}
+
+
+
+.input-wrapper input:focus-visible {
+    outline: none;
+}
+
+
+
+.resultados-pesquisa {
+    width: 60rem;
+    height: 46vh;
+    overflow-y: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+
+}
+
+.item-resultado {
+    background: #fff;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-resultado h2 {
+    font-size: 1.5rem
+    color #222831;
+}
+
+.item-resultado a {
+    text-decoration: none; 
+    color: #30475E; 
+}
+
+.item-resultado a:hover {
+    text-decoration: underline; 
+}
+
+
+.descricao-meta {
+    color: #45474B; 
+    margin: 0.5rem 0; 
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+    section input {
+        width: 25rem;
+        padding: 0.8rem;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem; 
+        letter-spacing: 0.1rem; 
+    }
+
+    section input {
+        width: 17rem; 
+    }
+
+    section button {
+        padding: 0.6rem 1rem; 
+        font-size: 0.9rem;
+    }
+
+    .resultados-pesquisa {
+        width: 90%; 
+        height: 50vh; 
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem; 
+    }
+
+    footer {
+        font-size: 0.9rem; 
+    }
+}
+
